@@ -7,7 +7,7 @@
     tools:context=".AltMainActivity">
 
     <TextView
-        style="OutputText"
+        style="@style/OutputText"
         android:id="@+id/output_TextView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -33,7 +33,6 @@
         android:layout_width="99dp"
         android:layout_height="78dp"
         android:layout_marginStart="8dp"
-        android:background="@color/red"
         app:layout_constraintBottom_toTopOf="@+id/userName_Textview"
         app:layout_constraintStart_toStartOf="@+id/input_Frame" />
 

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.dynamicdevs.chatbackandforth.databinding.ActivityMainBinding;
@@ -25,14 +24,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ImageView iv = findViewById(R.id.image_Frame);
-        Glide.with(MainActivity.this)
-                .applyDefaultRequestOptions(RequestOptions.circleCropTransform())
-                .load(R.drawable.blue_image_drawable)
-                .into(iv);
+
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        ImageView iv = findViewById(R.id.image_Frame);
+        Glide.with(MainActivity.this)
+                .applyDefaultRequestOptions(RequestOptions.circleCropTransform())
+                .load(R.drawable.blue)
+                .into(iv);
 
         sharedPreferences = getSharedPreferences(getPackageName(), Context.MODE_PRIVATE);
 

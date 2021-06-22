@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/output_TextView"
-        style="OutputText"
+        style="@style/OutputText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/input_Frame"
@@ -34,7 +34,6 @@
         android:layout_width="99dp"
         android:layout_height="78dp"
         android:layout_marginStart="8dp"
-        android:background="@color/blue"
         app:layout_constraintBottom_toTopOf="@+id/userName_Textview"
         app:layout_constraintStart_toStartOf="@+id/input_Frame" />
 

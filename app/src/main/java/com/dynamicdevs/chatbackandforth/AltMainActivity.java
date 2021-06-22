@@ -30,7 +30,7 @@ public class AltMainActivity extends AppCompatActivity {
         ImageView iv = findViewById(R.id.image_Frame);
         Glide.with(AltMainActivity.this)
                 .applyDefaultRequestOptions(RequestOptions.circleCropTransform())
-                .load(R.drawable.blue_image_drawable)
+                .load(R.drawable.red)
                 .into(iv);
 
         Intent returnedIntent = getIntent();
