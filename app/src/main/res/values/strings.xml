@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChatBackAndForth</string>
+    <string name="blue_user">Blue User</string>
+    <string name="red_user">Red User</string>
+    <string name="switch_users">Switch Users</string>
+    <string name="send">Send</string>
+</resources>
